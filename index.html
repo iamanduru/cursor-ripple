@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitchelle Anduru - UI/UX Designer & Front-end Engineer</title>
+    <style>
+        :root {
+            
+            --background-color: #4B000F; 
+            --text-color: #FCE4E4;       
+            --accent-color: #FFFFFF;      
+            --link-hover-color: #F88379;  
+            --font-family: 'Arial', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--background-color);
+            line-height: 1.6;
+            padding: 4rem;
+        }
+
+
+        #cursor-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+            opacity: 0.7;
+        }
+
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: bold;
+            color: var(--text-color);
+        }
+    </style>
+</head>
+<body>
+    <canvas id="cursor-canvas"></canvas>
+    <h1>Cursor Canvas Animation</h1>
+
+    <script src="index.js"></script>
+</body>
+</html>
